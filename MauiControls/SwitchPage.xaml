@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.SwitchPage"
+             Title="SwitchPage">
+
+
+    <StackLayout Padding="15">
+        <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+            <Label Text="Otomatik Dil" VerticalOptions="Center"/>
+            <Switch ThumbColor="White" x:Name="switch" OnColor="Green" Toggled="Switch_Toggled"/>
+            <Label Text="{Binding Source={x:Reference switch} ,Path=IsToggled }"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.PickerPage"
+             Title="PickerPage">
+
+
+    <StackLayout Padding="15">
+
+        <Picker x:Name="mypicker" SelectedIndexChanged="mypicker_SelectedIndexChanged" Title="Seçiminizi Yapın" TitleColor="Red" TextColor="Orange">
+            <Picker.Items>
+                <x:String>Mavi</x:String>
+                <x:String>Kırmızı</x:String>
+                <x:String>Yeşil</x:String>
+            </Picker.Items>
+        </Picker>
+
+
+    </StackLayout>
+</ContentPage>

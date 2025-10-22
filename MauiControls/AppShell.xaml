@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiControls.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiControls"
+    xmlns:pages="clr-namespace:MauiControls" 
+    Title="MauiControls">
+
+    <!-- Ana Sayfa --><!--
+    <ShellContent 
+        Title="Home"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />-->
+
+    <!-- EntryEditorPage -->
+    <!--<ShellContent
+        Title="EntryEditorPage"
+        ContentTemplate="{DataTemplate pages:EntryEditorPage}"
+        Route="EntryEditorPage" />-->
+
+
+    <!--<ShellContent
+     Title="CheckBoxPage"
+     ContentTemplate="{DataTemplate pages:CheckBoxPage}"
+     Route="CheckBoxPage" />-->
+
+    <!--<ShellContent
+     Title="SwitchPage"
+     ContentTemplate="{DataTemplate pages:SwitchPage}"
+     Route="SwitchPage" />-->
+    
+    <!--<ShellContent
+     Title="SliderPage"
+     ContentTemplate="{DataTemplate pages:SliderPage}"
+     Route="SliderPage" />-->
+    
+    <!--<ShellContent
+     Title="StepperPage"
+     ContentTemplate="{DataTemplate pages:StepperPage}"
+     Route="StepperPage" />-->
+
+    <!--<ShellContent
+ Title="PickerPage"
+ ContentTemplate="{DataTemplate pages:PickerPage}"
+ Route="PickerPage" />-->
+
+    <ShellContent
+Title="DatePickerPage"
+ContentTemplate="{DataTemplate pages:DatePickerPage}"
+Route="DatePickerPage" />
+
+</Shell>

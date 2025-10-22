@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiControls.DatePickerPage"
+             Title="DatePickerPage">
+
+    <StackLayout Padding="20">
+        <!-- Başlangıç tarihi seçici -->
+        <Label Text="Başlangıç Tarihi" FontAttributes="Bold"/>
+        <DatePicker x:Name="datepickerfirst" />
+
+        <!-- Bitiş tarihi seçici -->
+        <Label Text="Bitiş Tarihi" FontAttributes="Bold" Margin="0,10,0,0"/>
+        <DatePicker 
+            Date="2023-12-30"
+            MinimumDate="{Binding Source={x:Reference datepickerfirst}, Path=Date}"
+            MaximumDate="2025-01-01"
+            DateSelected="DatePicker_DateSelected" />
+
+    </StackLayout>
+</ContentPage>
