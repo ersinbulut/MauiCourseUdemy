@@ -9,6 +9,12 @@
                 <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
+            <Style TargetType="Shell">
+                <Setter Property="Shell.TabBarBackgroundColor" Value="#222831"/>
+                <Setter Property="Shell.TabBarForegroundColor" Value="#EEEEEE"/>
+                <Setter Property="Shell.TabBarTitleColor" Value="#00ADB5"/>
+                <Setter Property="Shell.TabBarUnselectedColor" Value="#AAAAAA"/>
+            </Style>
         </ResourceDictionary>
     </Application.Resources>
 </Application>

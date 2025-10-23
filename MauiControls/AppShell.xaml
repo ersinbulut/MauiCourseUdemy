@@ -4,50 +4,77 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MauiControls"
-    xmlns:pages="clr-namespace:MauiControls" 
+    xmlns:pages="clr-namespace:MauiControls"
     Title="MauiControls">
 
-    <!-- Ana Sayfa --><!--
-    <ShellContent 
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />-->
+    <!-- Alt kısımda yatay sekmeli menü -->
+    <TabBar>
 
-    <!-- EntryEditorPage -->
-    <!--<ShellContent
-        Title="EntryEditorPage"
-        ContentTemplate="{DataTemplate pages:EntryEditorPage}"
-        Route="EntryEditorPage" />-->
+        <ShellContent 
+            Title="Ana Sayfa"
+            Icon="home.png"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
 
+        <ShellContent
+            Title="Entry / Editor"
+            Icon="edit.png"
+            ContentTemplate="{DataTemplate pages:EntryEditorPage}"
+            Route="EntryEditorPage" />
 
-    <!--<ShellContent
-     Title="CheckBoxPage"
-     ContentTemplate="{DataTemplate pages:CheckBoxPage}"
-     Route="CheckBoxPage" />-->
+        <ShellContent
+            Title="CheckBox"
+            Icon="checkbox.png"
+            ContentTemplate="{DataTemplate pages:CheckBoxPage}"
+            Route="CheckBoxPage" />
 
-    <!--<ShellContent
-     Title="SwitchPage"
-     ContentTemplate="{DataTemplate pages:SwitchPage}"
-     Route="SwitchPage" />-->
-    
-    <!--<ShellContent
-     Title="SliderPage"
-     ContentTemplate="{DataTemplate pages:SliderPage}"
-     Route="SliderPage" />-->
-    
-    <!--<ShellContent
-     Title="StepperPage"
-     ContentTemplate="{DataTemplate pages:StepperPage}"
-     Route="StepperPage" />-->
+        <ShellContent
+            Title="Switch"
+            Icon="switch.png"
+            ContentTemplate="{DataTemplate pages:SwitchPage}"
+            Route="SwitchPage" />
 
-    <!--<ShellContent
- Title="PickerPage"
- ContentTemplate="{DataTemplate pages:PickerPage}"
- Route="PickerPage" />-->
+        <ShellContent
+            Title="Slider"
+            Icon="slider.png"
+            ContentTemplate="{DataTemplate pages:SliderPage}"
+            Route="SliderPage" />
 
-    <ShellContent
-Title="DatePickerPage"
-ContentTemplate="{DataTemplate pages:DatePickerPage}"
-Route="DatePickerPage" />
+        <ShellContent
+            Title="Stepper"
+            Icon="stepper.png"
+            ContentTemplate="{DataTemplate pages:StepperPage}"
+            Route="StepperPage" />
 
+        <ShellContent
+            Title="Picker"
+            Icon="picker.png"
+            ContentTemplate="{DataTemplate pages:PickerPage}"
+            Route="PickerPage" />
+
+        <ShellContent
+            Title="Date Picker"
+            Icon="calendar.png"
+            ContentTemplate="{DataTemplate pages:DatePickerPage}"
+            Route="DatePickerPage" />
+
+        <ShellContent
+            Title="Time Picker"
+            Icon="clock.png"
+            ContentTemplate="{DataTemplate pages:TimePickerPage}"
+            Route="TimePickerPage" />
+
+        <ShellContent
+            Title="Refresh View"
+            Icon="refresh.png"
+            ContentTemplate="{DataTemplate pages:RefreshViewPage}"
+            Route="RefreshViewPage" />
+
+        <ShellContent
+             Title="ActivityIndicator View"
+             Icon="activity.png"
+             ContentTemplate="{DataTemplate pages:ActivityIndicatorPage}"
+             Route="ActivityIndicatorPage" />
+
+    </TabBar>
 </Shell>

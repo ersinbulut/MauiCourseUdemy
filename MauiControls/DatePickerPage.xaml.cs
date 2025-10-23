@@ -7,7 +7,7 @@ public partial class DatePickerPage : ContentPage
         InitializeComponent();
     }
 
-    private void DatePickerPage_DateSelected(object sender, DateChangedEventArgs e)
+    private void DatePicker_DateSelected(object sender, DateChangedEventArgs e)
     {
         var control = (Microsoft.Maui.Controls.DatePicker)sender; // ✅ Doğru tür
         DateTime result = control.Date;
